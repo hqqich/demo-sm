@@ -1,4 +1,4 @@
-package org.example;
+package com.tsinglink.util;
 
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.util.encoders.Hex;

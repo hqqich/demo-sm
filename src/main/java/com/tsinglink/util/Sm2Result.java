@@ -1,4 +1,4 @@
-package com.jkzn.utils.sm2.SMCipher.vo;
+package com.tsinglink.util;
 
 public class Sm2Result {
 	/**

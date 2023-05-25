@@ -1,4 +1,4 @@
-package org.example;
+package com.tsinglink.util;
 
 /**
  * Created by ChenHao on 2023/5/25 is 10:09.

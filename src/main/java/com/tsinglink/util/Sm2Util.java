@@ -1,6 +1,5 @@
-package org.example;
+package com.tsinglink.util;
 
-import com.jkzn.utils.sm2.SMCipher.vo.Sm2Result;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;

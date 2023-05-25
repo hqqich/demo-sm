@@ -1,4 +1,4 @@
-package org.example;
+package com.tsinglink.util;
 
 public class Util4Hex {
 

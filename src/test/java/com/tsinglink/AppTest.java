@@ -1,6 +1,8 @@
-package org.example;
+package com.tsinglink;
 
 import com.google.gson.Gson;
+import com.tsinglink.util.Sm2Util;
+import com.tsinglink.util.Util4Hex;
 import java.util.HashMap;
 import junit.framework.Test;
 import junit.framework.TestCase;

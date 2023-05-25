@@ -1,4 +1,4 @@
-package org.example;
+package com.tsinglink.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
