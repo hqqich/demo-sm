@@ -1,6 +1,8 @@
 package com.tsinglink
 
+import com.google.gson.Gson
 import com.tsinglink.controller.ApiSignHandlerImpl
+import com.tsinglink.util.ProgrameUtil
 import io.vertx.core.AbstractVerticle
 import io.vertx.core.Promise
 import io.vertx.ext.web.Router
@@ -28,14 +30,14 @@ class MainVerticle : AbstractVerticle() {
     router.route("/test").handler(ApiSignHandlerImpl()).handler { ctx: RoutingContext ->
       val response = ctx.response()
       response.putHeader("content-type", "application/json")
-      response.end("{\"idCard\":\"341223199902050118\",\"activiId\":\"1\"}")
+      response.end(Gson().toJson(mapOf("data" to ProgrameUtil.getString("test", "test"))))
     }
 
     server
       .requestHandler(router)
       .listen(8888)
-      .onSuccess { server ->
-        println("HTTP server started on port " + server.actualPort())
+      .onSuccess {
+        println("HTTP server started on port " + it.actualPort())
       }
 
   }
